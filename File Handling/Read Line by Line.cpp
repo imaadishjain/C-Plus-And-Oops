@@ -1,0 +1,19 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+
+int main()
+{
+    char ch[80];
+
+    fstream f;
+    f.open("Delete Record.cpp",ios::in);
+    while(f.getline(ch,80))
+    {
+        cout<<ch<<endl;;
+    }
+    f.close();
+    return 0;
+
+
+}
